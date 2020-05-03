@@ -9,14 +9,15 @@
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
     android:paddingTop="80dp"
+    android:background="@color/colorPrimary2"
     tools:context=".MainActivity">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/name"
-            android:hint="Name"
+            android:id="@+id/nik"
+            android:hint="NIK"
             android:inputType="textPersonName"
             android:textColor="@color/colorText"
             android:layout_width="match_parent"
@@ -27,9 +28,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/email"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
+            android:id="@+id/nama"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/alamat"
+            android:hint="Alamat"
+            android:inputType="textPersonName"
             android:textColor="@color/colorText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -65,9 +78,10 @@
         android:layout_marginTop="30dp"
         android:visibility="gone"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/btn_regist"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/colorText"
         android:text="Daftar"
