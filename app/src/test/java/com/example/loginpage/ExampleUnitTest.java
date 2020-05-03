@@ -1,4 +1,4 @@
-package com.example.anroidregisterandlogin;
+package com.example.loginpage;
 
 import org.junit.Test;
 

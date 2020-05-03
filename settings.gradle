@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Anroid Register And Login'
+rootProject.name='login page'

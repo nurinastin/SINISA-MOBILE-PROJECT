@@ -4,87 +4,108 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
-    android:paddingTop="80dp"
-    android:background="@color/colorPrimary2"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <android.support.design.widget.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/nik"
-            android:hint="NIK"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorText"
+        android:layout_height="130dp"
+        android:layout_weight="0.5"
+        android:background="#FDFDFD"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="275dp"
+            android:layout_height="140dp"
+            android:padding="1dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gradasi"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/nama"
-            android:hint="Nama"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorText"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="15dp" />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/alamat"
-            android:hint="Alamat"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:background="@drawable/from"
+            android:drawableStart="@drawable/user"
+            android:drawableLeft="@drawable/user"
+            android:hint="  Username"
+            android:paddingLeft="10dp" />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+
         <EditText
-            android:id="@+id/username"
-            android:hint="Nama Pengguna"
-            android:inputType="textUserName"
-            android:textColor="@color/colorText"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:background="@drawable/from"
+            android:drawableStart="@drawable/key"
+            android:drawableLeft="@drawable/key"
+            android:hint="  Password"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="15dp"></RelativeLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:passwordToggleEnabled="true">
-        <EditText
-            android:id="@+id/password"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textColor="@color/colorText"
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/from"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:textColor="#2C2B2B"
+            android:textStyle="bold" />
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="5dp"></RelativeLayout>
 
-    <ProgressBar
-        android:id="@id/loading"
-        android:layout_marginTop="30dp"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/from"
+            android:text="DAFTAR"
+            android:textAllCaps="false"
+            android:textColor="#2C2B2B"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_regist"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@color/colorText"
-        android:text="Daftar"
-        android:layout_width="match_parent"
-        android:layout_height="55dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lupa Kata Sandi?"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 </LinearLayout>
