@@ -1,4 +1,4 @@
-package com.example.loginpage;
+package com.example.sinisamobile;
 
 import org.junit.Test;
 

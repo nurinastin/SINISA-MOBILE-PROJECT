@@ -1,4 +1,4 @@
-package com.example.loginpage;
+package com.example.sinisamobile;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.loginpage", appContext.getPackageName());
+        assertEquals("com.example.sinisamobile", appContext.getPackageName());
     }
 }
