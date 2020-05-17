@@ -1,40 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    http://schemas.android.com/apk/res-auto"
     xmlns:tools=http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_home">
-
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/logo" />
+    tools:context="com.example.sinisamobile.activity_home"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_parent"
-        android:gravity="center"
+        android:layout_height="match_parent"
         android:layout_margin="5dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal" >
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome_user"
-        android:textColor="#123456"
-        android:textSize="23sp"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="227dp" />
-</LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_parent"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/penyuluhan" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Penyuluhan"/>
+                </LinearLayout>>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginHorizontal="5dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/penyuluhan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sewa Alat"/>
+            </LinearLayout>>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_user"
+            android:textColor="#123456"
+            android:textSize="23sp"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="227dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
