@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.sinisa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".config.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".dashboard.Fragment_Dashboard"></activity>
+        <activity
+            android:name=".dashboard.Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".dashboard.Tentang" />
+        <activity android:name=".sewa.Barang" />
+        <activity android:name=".sewa.Form_Sewa" />
+        <activity android:name=".sewa.Detail_Barang" />
+        <activity android:name=".sewa.Sewa" />
+        <activity android:name=".penyuluhan.Pengajuan_Jadwal" />
+        <activity android:name=".penyuluhan.Penyuluhan" />
+        <activity android:name=".akun.Sign_Up" />
+        <activity android:name=".akun.Sign_In" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
